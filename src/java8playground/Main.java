@@ -6,7 +6,7 @@
 
 package java8playground;
 
-import java.util.ArrayList;
+import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.List;
 import java8playground.model.Contato;
@@ -28,6 +28,8 @@ public class Main {
             new Contato("Maria Silva", "8800-0099", "silvamaria@localhost"),
             new Contato("Josefa Alves", "8800-0090", "zefa@localhost")
         );
+        
+        System.out.println(LocalDate.now());
         
         System.out.println("-- Ordenando por nome:");
         contatos.sort((c1,c2) -> c1.getNome().compareTo(c2.getNome()));
